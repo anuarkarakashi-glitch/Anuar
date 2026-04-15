@@ -1,0 +1,468 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: #0d0d0d;
+  color: white;
+background-color: black;
+}
+
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 60px;
+  background: #111;
+}
+
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color:red;
+}
+
+
+.center-nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-left: 200px;
+  font-weight: 800;
+}
+
+.center-nav a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: red;
+  font-size: 16px;
+  transition: 0.3s;
+  margin-left:10px
+  
+}
+
+.center-nav a:hover {
+  color: red;
+}
+
+
+.right-nav .login {
+  background: black;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.right-nav .login:hover {
+  background: black;
+  color: white;
+}
+
+
+.products {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 80px;
+}
+
+
+.card {
+  background: black;
+  border-radius: 12px;
+  padding: 20px;
+  width: 260px;
+  text-align: center;
+  transition: 0.3s;
+  margin-bottom: 50px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  background-color: white;
+}
+
+
+.card h3 {
+  margin: 15px 0;
+}
+
+.card p {
+  color: red;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: black;
+  margin-bottom: 15px auto;
+  
+
+
+}
+ 
+footer a{
+  color: rgb(7, 155, 214);
+margin: 3px;
+}
+
+
+
+.card {
+  background: white ;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  width: 100%
+
+
+}
+
+section h2{
+  color: red;
+  font-weight: 700;
+}
+
+.products-section {
+  padding: 40px;
+   width: 100%;
+}
+
+.title{
+  color: red;
+  margin-left: 100px;
+  font-size: 24px;
+  color: red;
+  font-size: 26px;
+  font-weight: bold;
+  padding-left: 5px;
+   display: block;
+    width: 100%;
+  justify-content: center;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  
+}
+
+ 
+.search-container {
+  position: relative;
+  width: 290px;
+  margin-right: 593px;
+}
+
+.search-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: black;
+  border-radius: 8px;
+  padding: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.search-input {
+  width: 100%;
+  border: none;
+  background: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px;
+  outline: none;
+}
+
+.search-input::placeholder {
+  color: #aaa;
+}
+
+.search-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #333;
+  border-radius: 50%;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-icon svg {
+  fill: #fff;
+}
+
+.search-icon:hover {
+  background-color: #555;
+}
+
+.search-bar:hover {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.search-bar:focus-within {
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.4);
+}
+
+.glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 200%;
+  border-radius: 100px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1), transparent);
+  transition: all 0.5s ease;
+  transform: translate(-50%, -50%) scale(0);
+  z-index: -1;
+}
+
+.search-bar:hover + .glow {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.search-bar:focus-within + .glow {
+  transform: translate(-50%, -50%) scale(1.2);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.2), transparent);
+}
+
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+   margin-left: 500px;
+
+  }
+
+  .hero h1 {
+    font-size: 40px;
+   
+  }
+}
+
+
+/* From Uiverse.io by alexmaracinaru */ 
+.blej {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.blej span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 14px;
+  padding-right: 15px;
+  text-transform: uppercase;
+  font-weight: 900;
+  background-color: white;
+  margin-left: 70px;
+ color: blue;
+}
+
+.blej svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.blej:hover svg {
+  transform: translateX(0);
+}
+
+.blej:active svg {
+  transform: scale(0.9);
+}
+
+.tani {
+  position: relative;
+  color: black;
+  padding-bottom: 20px;
+  background-color: black;
+}
+
+.tani:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.blej:hover.tani:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+.oferta {
+  padding: 40px;
+  background: #f5f5f5;
+}
+
+.oferta h2 {
+  margin-bottom: 20px;
+}
+
+.oferta-container {
+  display: flex;
+  gap: 20px;
+}
+
+
+.oferta-left {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 40%;
+  text-align: center;
+  color: black;
+}
+
+.oferta-left img {
+  max-width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+
+.price .new {
+  font-size: 22px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.price .old {
+  text-decoration: line-through;
+  color: gray;
+  margin-left: 10px;
+}
+
+.save {
+  margin: 10px 0;
+}
+
+.save span {
+  background: #ff4d4d;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 5px;
+}
+
+.oferta-left button {
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  background: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+
+.oferta-right {
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  width: 60%;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+
+.item img {
+  width: 60px;
+  color: #000000;
+
+}
+
+.item p {
+  margin: 0;
+  color: #000000;
+}
+
+.item .new {
+  font-weight: bold;
+  margin-right: 10px;
+  color: #000000;
+}
+
+.item .old {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.btn{
+   color: red;
+  background-color: black;
+  font-weight: 900;
+  height: 55px;
+  width: 120px;
+  margin-top: 25px;
+}
+
+.title{
+  background-color: black;
+  color: whitesmoke;
+  border-radius: 15px;
+  width: 300px;
+  text-align: center;
+  margin-left: 560px;
+  margin-top: 25px;
+ 
+
+}
+
+.btn a{
+  color: red;
+}
+
+.tani a{
+  color: black;
+  margin-left:25px;
+
+}
+
+
+#foto{
+ margin-left: 3px;
+ width: 1902px;
+ 
+}
+
+#rek{
+margin-left: 800px;
+color: red;
+}
+
+.card h3{
+  color: red;
+  margin-bottom: 30px;
+}
